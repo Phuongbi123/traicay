@@ -1,0 +1,550 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+:root {
+    --primary-color: #8b8b99;
+    --color-while: #ffff;
+    --color-green: #2A7D2E;
+}
+
+
+
+.menu-item .menu-item1 {
+    display: flex;
+}
+
+body {
+    background-color: var(--color-while);
+
+}
+
+html {
+    font-size: 15px;
+
+}
+
+.menu {
+    display: flex;
+}
+
+#header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    top: 0px;
+    display: flex;
+    width: 100%;
+    height: 100px;
+   
+    /* padding: 0px 70px; */
+    position: fixed;
+    z-index: 10;
+    background-color: #ffff;
+}
+
+.header-logo {
+    width: 25%;
+    line-height: 100px;
+    background: var(--color-while);
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.menu {
+    line-height: 100px;
+    width: 50%;
+    /* justify-content: space-between; */
+    /* background-color: #ffff; */
+
+}
+
+.menu-item1>li>a:hover {
+    color: var(--color-green);
+}
+
+.submenu li a:hover {
+    background-color: yellowgreen;
+    border-bottom: yellowgreen;
+    color: var(--color-while);
+}
+
+.menu-item1 {
+    position: relative;
+}
+
+.menu-item1 li {
+    list-style: none;
+
+}
+
+.menu-item1 li a {
+    text-decoration: none;
+    padding: 0px 15px;
+    /* color: #000; */
+    color: black;
+    display: block;
+}
+/* TÌM KIẾMS */
+.cac-icon {
+    display: flex;
+}
+
+/* nut bên trái */
+.cac-icon {
+    width: 25%;
+   
+    margin-top: 35px;
+
+    
+}
+
+.menu-item1 .fal {
+    font-weight: 300;
+    color: rgb(277, 65, 72);
+}
+
+.search {
+background-color: rgb(245,245 ,245);
+ width: 180px;
+ height: 30px;
+ border-radius: 20px;
+}
+.search input{
+    border: none;
+    outline: none;
+    height: 28px;
+    background-color: rgb(245,245 ,245);
+    border-radius: 20px;
+    text-indent: 15px;
+    width: 150px;
+}
+.search i{
+    color: rgb(54, 46, 46);
+}
+.cac-icon .icon{
+   
+} 
+.cac-icon .icon i{
+    font-size: 20px;
+    color: rgb(54, 46, 46);
+    padding-left: 15px;
+}
+/* phần menu con */
+.submenu {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+    z-index: 10;
+    background: #ffff;
+    width: 200px;
+    display: none;
+    visibility: hidden;
+
+}
+
+.submenu li a {
+    text-decoration: none;
+    display: block;
+    text-indent: 10px;
+    color: black;
+    font-size: 15px;
+    color: var(--primary-color);
+
+
+
+    /* color: white; */
+    line-height: 45px;
+
+}
+
+.menu-item1>li:hover .submenu {
+    display: block;
+    visibility: visible;
+
+}
+
+#footter {
+    margin-top: 60px;
+}
+
+.subscribe-TT {
+    width: 100%;
+    height: 232px;
+    background-image: url(https://food-03.web4s.vn/uploads/plugin/custom_img/2019-08-23/1566527241-1511252633-custom.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+
+.text-subscribe-TT {
+    flex: 1;
+    text-align: center;
+}
+
+.text-subscribe-TT h2 {
+    margin-top: 90px;
+
+}
+
+.subscribe-TT-input {
+    flex: 1;
+}
+
+.form-input {
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 90px;
+    margin-left: 15px;
+
+}
+
+.form-input input {
+    width: 350px;
+    height: 43px;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 30px;
+}
+
+.form-input {}
+
+.form-input button {
+    width: 100px;
+    height: 43px;
+    background: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    ;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  
+    margin-left: 50px;
+
+}
+
+.form-input button:hover {
+    background-color: #f7b111;
+    transition: 0.4s ease-in;
+}
+/* PHẦN BANNER */
+#content{
+   height: 830px;
+    
+    width: 100%;
+    margin-top: 100px;
+  
+
+}
+#content .baner>img{
+    width: 100%;
+  
+    height: 200px;
+  
+}
+.baner>img{
+    position: relative;
+}
+#content>h3{
+    position: absolute;
+    z-index: 2;
+ line-height: 180px;
+   left: 40%;
+   font-size: 30px;
+   text-transform: uppercase;
+   color: #f7b111;
+}
+.baner>img{
+    position: relative;
+}
+#content>h3{
+    position: absolute;
+    z-index: 2;
+ line-height: 180px;
+   left: 44%;
+   font-size: 30px;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+}
+/* Phần nọi dung */
+.noidung
+{
+  
+  
+    display: flex;
+    width: 90%;
+    height: 600px;
+    margin: 0px auto;
+  
+}
+.test{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.content-left{
+    flex: 1;
+}
+.content-right{
+    flex: 2;
+}
+.content-right iframe{
+    width: 100%;
+   height: 500px;
+   margin-top: 25px;
+}
+.diachi{
+    list-style: none;
+
+}
+.diachi li  {
+    display: flex;
+    vertical-align: middle;
+    margin: 25px 0px;
+   
+    
+    
+}
+.gui input{
+  
+    width: 350px;
+    height: 45px;
+    border-radius: 20px;
+}
+.diachi i{
+    display: inline;
+
+    color:rgb(183, 220, 54) ;
+}
+.diachi li p{
+    margin-left: 15px;
+}
+.gui input,textarea{
+    text-indent: 15px;
+    border: 1px solid #ccc;
+    outline: black;
+}
+.gui textarea{
+    width: 350px;
+    height: 133px;
+    border-radius: 30px;
+    resize: none;
+    
+}
+.content-left hr{
+    opacity: 0.3;
+}
+.gui-lienhe>input{
+    width: 150px;
+ margin: 10px 0px;
+    border-radius: 20px;
+    height: 46px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    background: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    ;
+}
+.gui{
+    margin: 28px 0px;
+}
+
+
+/* footer */
+
+#wrapper-footer {
+    width: 100%;
+    height: auto;
+}
+
+#wrapper-footer .footer {
+    display: flex;
+    height: 335px;
+    width: 1180px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.footer hr {
+    width: 30px;
+    border: 1.5px solid rgb(183, 220, 54);
+}
+
+.footer .footer-about {
+    flex: 1;
+}
+
+.footer .footer-about p {
+    font-size: 13px;
+    line-height: 25.5px;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
+.footer .footer-about ul {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer .footer-about ul li a {
+    font-size: 30px;
+    padding: 0 5px;
+}
+
+.footer-about .fa-facebook {
+    color: rgb(98, 122, 173);
+}
+
+.footer-about .fa-facebook:hover {
+    color: rgb(77, 96, 138);
+    transition: 0.4 ease-in;
+}
+
+.footer-about .fa-twitter {
+    color: rgb(74, 180, 245);
+}
+
+.footer-about .fa-twitter:hover {
+    color: rgb(68, 165, 224);
+    transition: 0.4 ease-in;
+}
+
+.footer-about .fa-google-plus {
+    color: rgb(226, 105, 95);
+}
+
+.footer-about .fa-google-plus:hover {
+    color: rgb(197, 93, 83);
+    transition: 0.4 ease-in;
+}
+
+.footer-about .fa-pinterest {
+    color: rgb(277, 65, 72);
+}
+
+.footer-about .fa-pinterest:hover {
+    color: rgb(179, 69, 59);
+    transition: 0.4 ease-in;
+}
+
+.footer .footer-contact {
+    flex: 1;
+}
+
+.footer-contact ul {
+    list-style: none;
+    margin-top: 20px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.footer-contact ul li i {
+    color: rgb(171, 207, 38);
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+.footer-contact ul li p {
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.footer .photo-in-insatgam {
+    flex: 1;
+}
+
+.photo-in-insatgam img {
+    width: 90px;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.photo-in-insatgam img:hover {
+    transform: scale(1.1);
+}
+
+.photo-in-insatgam ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.photo-in-insatgam ul li {
+    flex-basis: 30%;
+    margin: auto;
+}
+
+.footer .business-hours {
+    flex: 1;
+    margin: auto;
+}
+
+.business-hours-content {
+    border: 1px double rgb(230, 224, 224);
+    border-width: 5px;
+    width: 262px;
+    height: 230px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+hr.put-footer {
+    position: relative;
+    width: 180px;
+    margin: 0 auto;
+    top: 20px;
+    background-color: rgb(183, 220, 54);
+}
+
+.business-hours-content img {
+    position: absolute;
+    right: 153px;
+}
+
+.business-hours-content .s1 {
+    margin-top: 40px;
+}
+
+.business-hours-content p {
+    line-height: 35px;
+}
+
+.business-hours-content p.title-business-hours {
+    opacity: 0.8;
+}
+
+.business-hours-content p.text-business-hours {
+    opacity: 0.7;
+}
+
+.no-coppy {
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+.no-coppy p {
+    margin-bottom: 15px;
+}
+
+
+#content .baner{
+    width: 100%;
+    height: 500px;
+}
+
+ 
